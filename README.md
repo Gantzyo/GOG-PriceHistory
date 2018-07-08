@@ -25,4 +25,4 @@ This script has been tested with [Greasemonkey](https://addons.mozilla.org/en-US
 
 ## Donations
 **If you are considering making a donation, thanks for you generosity, if not, it's completely fine!** Your donations help me to continue supporting this project so every single penny is welcome.
-* **Paypal**: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XJS2FKP2YQPWJ&lc=ES&item_name=Gantzyo&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+* **Paypal**: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=gantzyo%40outlook%2ecom&lc=ES&item_name=Gantzyo&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
