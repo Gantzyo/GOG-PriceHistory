@@ -11,8 +11,8 @@ This script has been tested with [Greasemonkey](https://addons.mozilla.org/en-US
 
 ## Installation
 1. Install a ScriptManager for you browser.
-    * Firefox: [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/), [Tampemonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) or [Violentmonkey](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)
-    * Google Chrome/Vivaldi: [Tampemonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
+    * **Firefox**: [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/), [Tampemonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) or [Violentmonkey](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)
+    * **Google Chrome** or **Vivaldi**: [Tampemonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Violentmonkey](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
 2. Restart your browser if needed.
 3. [Click here](https://github.com/Gantzyo/GOG-PriceHistory/raw/master/gog_pricehistory.user.js) to install this script.
 4. You are done!
@@ -22,3 +22,7 @@ This script has been tested with [Greasemonkey](https://addons.mozilla.org/en-US
 
 ## License
 [MIT](LICENSE)
+
+## Donations
+**If you are considering making a donation, thanks for you generosity, if not, it's completely fine!** Your donations help me to continue supporting this project so every single penny is welcome.
+* **Paypal**: [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XJS2FKP2YQPWJ&lc=ES&item_name=Gantzyo&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
