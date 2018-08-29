@@ -6,8 +6,8 @@
 // @match           https://www.gog.com/game/*
 // @description     Import GOGDB.org's price history inside GOG.com's store
 // @author          Gantzyo
-// @version         1.0.0
-// @icon            https://raw.githubusercontent.com/Gantzyo/GOG-PriceHistory/master/imgs/gogdb_256x256.png
+// @version         1.0.1
+// @icon            https://raw.githubusercontent.com/Gantzyo/GOG-PriceHistory/master/imgs/icon.png
 // @grant           GM.getResourceUrl
 // @grant           GM_getResourceURL
 // @grant           GM.xmlHttpRequest
