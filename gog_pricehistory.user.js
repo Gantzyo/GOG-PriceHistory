@@ -4,9 +4,9 @@
 // @homepageURL     https://github.com/Gantzyo/GOG-PriceHistory
 // @supportURL      https://github.com/Gantzyo/GOG-PriceHistory/issues
 // @match           https://www.gog.com/game/*
-// @description     Import GOGDB.org's price history inside GOG.com's store
+// @description     Display GOGDB.org's price history inside GOG.com's store
 // @author          Gantzyo
-// @version         1.0.1
+// @version         1.1.0
 // @icon            https://raw.githubusercontent.com/Gantzyo/GOG-PriceHistory/master/imgs/icon.png
 // @grant           GM.getResourceUrl
 // @grant           GM_getResourceURL
@@ -42,11 +42,11 @@
 
     // --- MAIN
 
-    var $productId = unsafeWindow.gogData.gameProductData.id;
+    var $productId = unsafeWindow.productcardData.cardProductId;
 
     // All new DOM classes and IDs look like: gog_ph_*
-    addGlobalStyle('#gog_ph_header { margin-top: 20px; }');
-    addGlobalStyle('#gog_ph_chart_canvas { max-height: 200px; width: 100%; }'); // BUGGED!! max-height is extremly important to avoid infinite canvas height
+    addGlobalStyle('#gog_ph_div { margin-bottom: 50px; }');
+    addGlobalStyle('#gog_ph_chart_canvas { max-height: 200px; width: 100%; margin-bottom: 10px; }'); // BUGGED!! max-height is extremly important to avoid infinite canvas height
     addGlobalStyle('.gog_ph_shadow { box-shadow: 0 1px 5px rgba(0,0,0,.15); }');
     addGlobalStyle('.gog_ph_whitebg { background-color: #e1e1e1; }');
     addGlobalStyle('.gog_ph_hidden { display: none; }');
@@ -55,17 +55,19 @@
     var gog_ph_div = document.createElement('div');
     gog_ph_div.setAttribute("id", "gog_ph_div");
     gog_ph_div.innerHTML =
-        '<header id="gog_ph_header" class="module-header">Price history</header>' +
-        '<p id="gog_ph_loading"><small>Loading...</small></p>' +
-        '<canvas id="gog_ph_chart_canvas" class="gog_ph_whitebg gog_ph_shadow gog_ph_hidden"></canvas>' +
-        '<p>' +
-        '<small>Price history retrieved from ' +
-        '<a id="gog_ph_gogdb_link" class="un" href="https://www.gogdb.org/" target="_blank">GOG Database</a>' +
-        '</small>' +
-        '</p>';
+    '<div class="title">' +
+        '<div class="title__underline-text">Price history</div>' +
+        '<div class="title__additional-options"></div>' +
+    '</div>' +
+    '<p id="gog_ph_loading"><small>Loading...</small></p>' +
+    '<canvas id="gog_ph_chart_canvas" class="gog_ph_whitebg gog_ph_shadow gog_ph_hidden"></canvas>' +
+    '<p>' +
+        'Price history retrieved from ' +
+        '<a id="gog_ph_gogdb_link" class="un" href="https://www.gogdb.org/" target="_blank"><u>GOG Database</u></a>' +
+    '</p>';
 
     // Append price history
-    document.querySelector('.screens').parentElement.appendChild(gog_ph_div);
+    document.querySelector('.layout-main-col').prepend(gog_ph_div);
 
     // Load GOGDB icon and place it inside site link (Async call)
     GM.getResourceUrl("gogdbLogo").then(function (value) {
